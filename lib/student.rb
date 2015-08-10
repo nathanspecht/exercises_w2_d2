@@ -32,9 +32,8 @@ class Student
   end
 
   def has_conflict?(new_course)
-    @courses.each do |course|
-        return true if course.conflicts_with?(new_course)
-    end
+    @courses.each { |course|
+        return true if course.conflicts_with?(new_course) }
     false
   end
 

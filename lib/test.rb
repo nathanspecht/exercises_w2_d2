@@ -1,6 +1,5 @@
 require_relative 'course'
 require_relative 'student'
-require 'byebug'
 
 course1 = Course.new("Ruby 101", "CS", 4, [:mon, :tue, :wed], 1)
 course2 = Course.new("Python", "CS", 4, [:wed, :thurs, :fri], 1)

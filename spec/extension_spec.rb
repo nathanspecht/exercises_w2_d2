@@ -1,5 +1,6 @@
 require 'student'
 require 'course'
+require 'byebug'
 
 describe "Extras" do
   let(:ruby) { Course.new("Ruby 101", "CS", 4, [:mon, :tue, :wed], 1) }
@@ -35,9 +36,9 @@ describe "Extras" do
 
   describe "Student#enroll" do
       it "raises an error if course conflicts with already enrolled course" do
-      student = Student.new("Johnny", "Rocket")
-      allow(student).to receive(:courses).and_return([drama, ruby])
-      expect { student.enroll(python) }.to raise_error
-    end
+        student = Student.new("Johnny", "Rocket")
+        allow(student).to receive(:courses).and_return([drama, ruby])
+        expect { student.enroll(python) }.to raise_error
+      end
   end
 end

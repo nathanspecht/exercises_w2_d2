@@ -48,7 +48,6 @@
 # * Update `Student#enroll` so that you raise an error if a `Student`
 #   enrolls in a new course that conflicts with an existing course time.
 #     * May want to write a `Student#has_conflict?` method to help.
-require 'byebug'
 
 class Course
   attr_accessor :name, :department, :credits, :students,

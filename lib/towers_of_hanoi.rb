@@ -53,8 +53,8 @@ class TowersOfHanoi
       from_tower = gets.chomp.to_i
       print "To tower: "
       to_tower = gets.chomp.to_i
-      move(from_tower, to_tower) if valid_move?(from_tower, to_tower)
       puts "Invalid move." if !valid_move?(from_tower, to_tower)
+      move(from_tower, to_tower) if valid_move?(from_tower, to_tower)
     end
     render
     puts "You win."
